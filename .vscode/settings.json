@@ -65,5 +65,14 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.rulers": [100]
+  "editor.rulers": [100],
+  "go.goroot": "/Users/liu-b/.local/share/mise/installs/go/1.22.11",
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "/Users/liu-b/.local/share/mise/shims/node"
+  },
+  "python.defaultInterpreterPath": "/Users/liu-b/.local/share/mise/installs/python/3.12.7/bin/python",
+  "go.alternateTools": {
+    "go": "/Users/liu-b/.local/share/mise/shims/go",
+    "gopls": "/Users/liu-b/.local/share/mise/shims/gopls"
+  }
 }

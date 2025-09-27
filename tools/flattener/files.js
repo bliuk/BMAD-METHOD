@@ -22,7 +22,8 @@ async function discoverFiles(rootDir) {
 async function filterFiles(files, rootDir) {
   const { filter } = await ignoreRules.loadIgnore(rootDir);
   const relativeFiles = files.map((f) => path.relative(rootDir, f));
-  const filteredRelative = relativeFiles.filter((p) => filter(p));
+  // const filteredRelative = relativeFiles.filter((p) => filter(p));
+  const filteredRelative = relativeFiles;
   return filteredRelative.map((p) => path.resolve(rootDir, p));
 }
 

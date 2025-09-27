@@ -51,7 +51,8 @@ async function discoverFiles(rootDir, options = {}) {
   // Try git first
   if (preferGit && (await isGitRepo(rootDir))) {
     const relFiles = await gitListFiles(rootDir);
-    const filteredRel = relFiles.filter((p) => filter(p));
+    //const filteredRel = relFiles.filter((p) => filter(p));
+    const filteredRel = relFiles;
     return filteredRel.map((p) => path.resolve(rootDir, p));
   }
 
